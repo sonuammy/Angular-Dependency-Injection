@@ -1,0 +1,14 @@
+
+<div class="jumbotron">
+  <h1> {{title}} </h1>
+  <div>
+      <table>
+          <tr *ngFor = "let obj of deptObj">
+              <td>ID:</td>{{obj.id}}
+              <td>Name:</td>{{obj.name}}
+          </tr>
+      </table>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
